@@ -1,0 +1,100 @@
+body {
+  margin: 5vmin;
+  background-color: #323232;
+  color: pink;
+}
+
+nav {
+  text-align: center;
+  padding: auto;
+  display: flex;
+  width: 100%;
+  justify-content:center;
+  flex-wrap: wrap;
+  color: whitesmoke;
+}
+
+
+h1  {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+
+main {
+}
+
+section {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: .3em;
+  font-size: .6em;
+  font-weight: 400;
+  background: #252727;
+  padding: .5rem 1rem;
+}
+
+a:hover {
+  color: @color-light;
+  background: @color-primary;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+  flex-flow: row wrap;
+}
+
+.section-container__block {
+
+  padding: 2rem;
+  margin: 1rem;
+  flex: 1 1 0;
+  text-align: center;
+}
+
+.section-container__block--project {
+  border-color: white;
+}
+
+
+.nav__but:hover, :focus {
+  color: blue;
+}
+
+.project__links {
+  padding-top: 0.5em;
+}
+
+a:hover, :focus {
+  color: #ff759f;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  color: whitesmoke;
+}
+
+@media all and (max-width: 550px) {
+  .section-container {
+    flex-direction: column;
+  }
+}

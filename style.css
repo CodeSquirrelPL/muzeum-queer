@@ -1,0 +1,95 @@
+/* Variables */
+/* Base */
+/*body {
+  background: #252827;
+  font-size: 16px;
+  color: whitesmoke;
+}*/
+p {
+  font-weight: 300;
+}
+
+#timeline-content {
+  margin-top: 50px;
+  text-align: center;
+  color: whitesmoke;
+}
+/* Timeline */
+.timeline {
+  border-left: 4px solid pink;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background: rgba(255, 255, 255, 0.03);
+  margin: 50px auto;
+  position: relative;
+  padding: 50px;
+  list-style: none;
+  text-align: left;
+  max-width: 35%;
+}
+
+@media all and (max-width: 666px) {
+  .timeline {
+    max-width: 70%;
+    padding: 30px;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .timeline {
+  }
+}
+
+.timeline h1 {
+/* font */
+}
+.timeline h2,
+.timeline h3 {
+/* font */
+}
+.timeline .event {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.timeline .event:before {
+  left: -217.5px;
+  color: rgba(255, 255, 255, 0.4);
+  content: attr(data-date);
+  text-align: right;
+  min-width: 120px;
+}
+
+
+
+.timeline .event:after {
+  box-shadow: 0 0 0 4px pink;
+  left: -57.85px;
+  background: #313534;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}
+
+@media all and (max-width: 666px) {
+.timeline .event:before {
+  position: static;
+}
+.timeline .event:after {
+  left: -37.85px;
+}
+}
